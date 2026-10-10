@@ -9,7 +9,11 @@
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
+```
 
+On Windows, `mysqlclient` is skipped because the local setup uses SQLite. The AWS Linux deployment still installs it for MySQL.
+
+```bash
 # 2. Apply migrations
 python manage.py migrate
 
