@@ -231,6 +231,8 @@ source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+On Windows, `mysqlclient` is skipped because local development uses SQLite. The Linux AWS deployment still installs it for Aurora MySQL.
+
 ### 2 — Configure environment variables via `.env`
 
 Copy the example file and fill in your values:
